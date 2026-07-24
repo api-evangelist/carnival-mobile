@@ -1,0 +1,51 @@
+# Marigold Push SDK Developer Portal Documentation
+
+> Welcome to the Marigold Push SDK Developer Portal. You'll find comprehensive guides and documentation to help you start working with Marigold's Push SDK as quickly as possible, as well as support if you get stuck.
+
+## Guides
+- [Marigold Mobile SDK Overview](https://sdkdevelopers.meetmarigold.com/docs/getting-started.md)
+- [Add the Marigold Mobile SDK](https://sdkdevelopers.meetmarigold.com/docs/sdk-integration.md)
+- [Setup Push Notifications](https://sdkdevelopers.meetmarigold.com/docs/setting-up-push-notifications.md)
+- [Setup In-App Messaging](https://sdkdevelopers.meetmarigold.com/docs/setting-up-in-app-messaging.md)
+- [Collecting User Data](https://sdkdevelopers.meetmarigold.com/docs/collecting-user-data.md)
+- [Customizing In-App Notifications](https://sdkdevelopers.meetmarigold.com/docs/customizing-in-app-notifications.md)
+- [Customizing Full Screen Messages](https://sdkdevelopers.meetmarigold.com/docs/customizing-full-screen-messages.md)
+- [Troubleshooting](https://sdkdevelopers.meetmarigold.com/docs/troubleshooting.md): Useful tips for the most common issues with push notifications
+- [React Native Functionality](https://sdkdevelopers.meetmarigold.com/docs/react-native-functionality.md): An overview of available React Native functionality
+- [Message Stream Overview](https://sdkdevelopers.meetmarigold.com/docs/message-stream.md)
+- [Building a Message Stream](https://sdkdevelopers.meetmarigold.com/docs/developing-a-custom-message-stream.md)
+- [iOS Release Checklist](https://sdkdevelopers.meetmarigold.com/docs/ios-release-checklist.md)
+- [Android Release Checklist](https://sdkdevelopers.meetmarigold.com/docs/android-release-checklist.md)
+- [Custom Alert Sounds](https://sdkdevelopers.meetmarigold.com/docs/custom-alert-sounds.md): Play a custom alert sound when the user receives a push
+- [Deep Linking](https://sdkdevelopers.meetmarigold.com/docs/deep-linking.md): Opening specific sections of your app right from Marigold Messages
+- [Delaying In App Notifications](https://sdkdevelopers.meetmarigold.com/docs/delaying-in-app-notifications.md)
+- [Interactive Notifications](https://sdkdevelopers.meetmarigold.com/docs/interactive-notifications.md)
+- [Key-Value Payloads](https://sdkdevelopers.meetmarigold.com/docs/key-value-payloads.md)
+- [Silent Push Notifications](https://sdkdevelopers.meetmarigold.com/docs/silent-push-notifications.md)
+- [Push Status](https://sdkdevelopers.meetmarigold.com/docs/push-enabled-state.md): Breakdown of the push status values for devices in the log
+- [Adding Notification Buttons](https://sdkdevelopers.meetmarigold.com/docs/adding-notification-buttons.md): A guide to adding buttons to your push notifications
+- [iOS: Notification Handling](https://sdkdevelopers.meetmarigold.com/docs/ios-notification-handling.md)
+- [iOS: Rich Notifications](https://sdkdevelopers.meetmarigold.com/docs/ios-rich-push.md)
+- [iOS: Location Updates](https://sdkdevelopers.meetmarigold.com/docs/ios-location-updates.md): A guide to location updates on iOS
+- [iOS: Apple Watch](https://sdkdevelopers.meetmarigold.com/docs/apple-watch.md): Supporting Apple Watch
+- [iOS: iBeacons](https://sdkdevelopers.meetmarigold.com/docs/ibeacons.md): How to integrate Carnival and iBeacons
+- [iOS: Delaying the Push Prompt](https://sdkdevelopers.meetmarigold.com/docs/delaying-the-push-prompt.md)
+- [iOS: Extensions Framework](https://sdkdevelopers.meetmarigold.com/docs/ios-extensions-framework.md): Description of the Extensions Framework and how to integrate it.
+- [iOS: Auto Integration](https://sdkdevelopers.meetmarigold.com/docs/ios-auto-integration.md): SDK auto integration details
+- [iOS: Interruption Levels](https://sdkdevelopers.meetmarigold.com/docs/ios-interruption-levels.md): A guide to interruption levels in iOS push notifications.
+- [iOS: Relevance Score](https://sdkdevelopers.meetmarigold.com/docs/ios-relevance-score.md): A guide to relevance scores in iOS push notifications.
+- [iOS: Swift Concurrency](https://sdkdevelopers.meetmarigold.com/docs/ios-swift-concurrency.md): How to use the iOS SDK with Swift Concurrency
+- [iOS: APNS Sandbox](https://sdkdevelopers.meetmarigold.com/docs/ios-apns-sandbox.md): How to mark a device as a development device
+- [Android: Notification Handling](https://sdkdevelopers.meetmarigold.com/docs/android-custom-notification-handling.md): Overriding Marigold's default behaviour
+- [Android: Rich Notifications](https://sdkdevelopers.meetmarigold.com/docs/rich-notifications.md)
+- [Android: Location Updates](https://sdkdevelopers.meetmarigold.com/docs/android-location-updates.md): A guide to location updates on the Android platform
+- [Android: Notification Channels](https://sdkdevelopers.meetmarigold.com/docs/android-notification-channels-1.md)
+- [Android: Google App Crawlers](https://sdkdevelopers.meetmarigold.com/docs/google-app-crawlers.md): Understanding the side effects of Google's app crawlers in your Android app.
+- [Android: Coroutines](https://sdkdevelopers.meetmarigold.com/docs/android-coroutines.md): Description on using the SDK asynchronous functionality from Kotlin Coroutines
+- [Marigold Rebrand Migration Guide](https://sdkdevelopers.meetmarigold.com/docs/rebrand-migration-guide.md): How to migrate to the rebranded SDKs
+- [Sailthru Specific Functionality](https://sdkdevelopers.meetmarigold.com/docs/sailthru-specific-functionality.md): A breakdown of the Sailthru specific functionality in the EngageBySailthru class
+- [Using SPM on Mobile](https://sdkdevelopers.meetmarigold.com/docs/using-spm-on-mobile.md)
+- [Handling Sailthru Links](https://sdkdevelopers.meetmarigold.com/docs/handling-sailthru-links.md)
+- [Purchases and Abandoned Carts](https://sdkdevelopers.meetmarigold.com/docs/purchases-and-abandoned-carts.md): How to send purchase and abandoned cart events through through the SDK.
+- [Testing Development Push Notifications](https://sdkdevelopers.meetmarigold.com/docs/testing-developer-push-notifications.md)
+- [Testing Production Push Notifications](https://sdkdevelopers.meetmarigold.com/docs/send-a-message.md)

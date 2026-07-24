@@ -1,8 +1,29 @@
 aid: carnival-mobile
 name: Carnival Mobile *
-description: 'Carnival Mobile * is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Carnival Mobile (carnival.io) was a mobile relationship management platform, backed by GV, that let
+  marketers segment users and deliver push notifications, in-app messages, rich media and an in-app
+  message stream from inside native iOS and Android apps. Sailthru acquired Carnival and rebranded the
+  product Sailthru Mobile; it ships today as the Marigold Mobile SDK. The lineage is still directly
+  observable: docs.carnival.io 301-redirects to docs.mobile.sailthru.com, which 301-redirects to
+  sdkdevelopers.meetmarigold.com, and the current documentation still carries Carnival-era pages such as
+  the iBeacons guide. The original carnivalmobile GitHub organization remains public, and the iOS,
+  Android and React Native SDKs are still published to CocoaPods and npm under the first-party
+  "carnival" maintainer account, which makes them the continuing distribution path for this company's
+  developer surface. Carnival Mobile has no independently documented public REST API; its developer
+  contract is an on-device SDK.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/carnivalmobile.png
 url: https://raw.githubusercontent.com/api-evangelist/carnival-mobile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +31,81 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-lineage:
+  original: Carnival Mobile (carnival.io)
+  renamed_to: Sailthru Mobile
+  current_product: Marigold Mobile SDK
+  evidence:
+  - {from: 'https://docs.carnival.io/', to: 'https://docs.mobile.sailthru.com/', status: 301}
+  - {from: 'https://docs.mobile.sailthru.com/', to: 'https://sdkdevelopers.meetmarigold.com/', status: 301}
+  - {source: 'https://api.github.com/orgs/carnivalmobile', note: 'org display name is "Sailthru Mobile"'}
+  - {source: 'https://www.sailthru.com/product/mobile/', to: 'https://zetaglobal.com/sailthru/', status: 200, note: 'Sailthru marketing surface now resolves to Zeta Global'}
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Mobile
+- Push Notifications
+- In-App Messaging
+- Marketing Automation
+- Customer Engagement
+- Mobile SDK
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://meetmarigold.com/
+- type: Portal
+  url: https://sdkdevelopers.meetmarigold.com/
+- type: Documentation
+  url: https://sdkdevelopers.meetmarigold.com/
+- type: GettingStarted
+  url: https://sdkdevelopers.meetmarigold.com/docs/getting-started
+- type: Support
+  url: https://support.meetmarigold.com/s/
+- type: GitHubOrganization
+  url: https://github.com/carnivalmobile
+- type: SourceCode
+  name: Marigold (Sailthru Mobile) iOS SDK
+  url: https://github.com/sailthru/sailthru-mobile-ios-sdk
+- type: SourceCode
+  name: Marigold (Sailthru Mobile) Android SDK
+  url: https://github.com/sailthru/sailthru-mobile-android-sdk
+- type: SourceCode
+  name: Marigold (Sailthru Mobile) React Native SDK
+  url: https://github.com/sailthru/sailthru-mobile-react-native-sdk
+- type: Packages
+  url: packages/carnival-mobile-packages.yml
+- type: SDKs
+  url: packages/carnival-mobile-packages.yml
+- type: LLMsTxt
+  url: llms/carnival-mobile-llms.txt
+- type: Lifecycle
+  url: lifecycle/carnival-mobile-lifecycle.yml
+- type: ChangeLog
+  url: changelog/carnival-mobile-changelog.yml
+- type: Deprecation
+  url: https://sdkdevelopers.meetmarigold.com/docs/rebrand-migration-guide
+- type: Sandbox
+  url: sandbox/carnival-mobile-sandbox.yml
+- type: TrustCenter
+  url: https://trust.meetmarigold.com/
+- type: DomainSecurity
+  url: security/carnival-mobile-domain-security.yml
+- type: PrivacyPolicy
+  url: https://meetmarigold.com/company/compliance/marigolds-privacy-notices
+- type: TermsOfService
+  url: https://meetmarigold.com/company/compliance/services-agreement

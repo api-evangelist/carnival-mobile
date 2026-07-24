@@ -1,0 +1,53 @@
+generated: '2026-07-20'
+method: searched
+source: https://sdkdevelopers.meetmarigold.com/docs/rebrand-migration-guide
+description: >-
+  Carnival Mobile ships an on-device SDK rather than a versioned HTTP API, so its lifecycle contract is
+  SDK release versioning plus a published rebrand migration path. Each platform SDK is independently
+  versioned with semver and released through GitHub Releases. The product has been renamed twice
+  (Carnival -> Sailthru Mobile -> Marigold), and each rename produced a new package name alongside a
+  published migration guide, which is the provider's de facto deprecation contract.
+versioning:
+  scheme: semver-per-platform
+  note: >-
+    Each platform SDK carries its own major version line; they are not aligned with each other
+    (iOS 19.x, Android 27.x, React Native 18.x as of 2026-05).
+  current:
+    ios: 19.0.0
+    android: 27.0.2
+    react_native: 18.0.1
+  releases:
+    ios: https://github.com/sailthru/sailthru-mobile-ios-sdk/releases
+    android: https://github.com/sailthru/sailthru-mobile-android-sdk/releases
+    react_native: https://github.com/sailthru/sailthru-mobile-react-native-sdk/releases
+deprecation:
+  policy_url: https://sdkdevelopers.meetmarigold.com/docs/rebrand-migration-guide
+  kind: rebrand-migration-guide
+  sunset_header: false
+  note: >-
+    No RFC 8594 Sunset/Deprecation header contract — this is an SDK, not an HTTP API. The published
+    deprecation surface is the Marigold Rebrand Migration Guide, which documents moving off the
+    Carnival- and Sailthru Mobile-named packages onto the Marigold-named ones. A companion page,
+    "Sailthru Specific Functionality", documents what remains available on the legacy EngageBySailthru
+    class.
+  superseded_packages:
+  - {package: react-native-carnival, registry: npm, last_published: '2022-06-26', superseded_by: react-native-marigold}
+  - {package: react-native-sailthru-mobile, registry: npm, superseded_by: react-native-marigold}
+  - {package: Carnival, registry: cocoapods, last_published: '2019-12-16', superseded_by: Marigold}
+  - {package: SailthruMobile, registry: cocoapods, last_published: '2023-11-10', superseded_by: Marigold}
+  related_docs:
+  - https://sdkdevelopers.meetmarigold.com/docs/rebrand-migration-guide
+  - https://sdkdevelopers.meetmarigold.com/docs/sailthru-specific-functionality
+sla:
+  url: null
+  note: No public SLA or uptime target published for the mobile SDK product.
+status_page: null
+status_page_note: >-
+  No reachable status page was found. status.meetmarigold.com does not resolve; status.sailthru.com
+  returns 403 to unauthenticated probes and is not attributable to this product line, so no StatusPage
+  pointer is wired.
+release_checklists:
+- https://sdkdevelopers.meetmarigold.com/docs/ios-release-checklist
+- https://sdkdevelopers.meetmarigold.com/docs/android-release-checklist
+deprecated_operations: []
+deprecated_operations_note: No OpenAPI in this repo, so no operation-level deprecation could be derived.

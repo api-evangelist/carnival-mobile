@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://api.github.com/repos/sailthru/sailthru-mobile-ios-sdk/releases
+description: >-
+  Carnival Mobile publishes no consolidated dated changelog on its documentation host —
+  /changelog and /reference/release-notes both 404. The real dated release record is GitHub Releases on
+  the three platform SDK repositories, which is what is captured here. Recent window only; the GitHub
+  Releases feeds remain the source of truth.
+scheme: semver-per-platform
+sources:
+- {platform: ios, url: 'https://github.com/sailthru/sailthru-mobile-ios-sdk/releases'}
+- {platform: android, url: 'https://github.com/sailthru/sailthru-mobile-android-sdk/releases'}
+- {platform: react_native, url: 'https://github.com/sailthru/sailthru-mobile-react-native-sdk/releases'}
+current:
+  ios: 19.0.0
+  android: 27.0.2
+  react_native: 18.0.1
+entries:
+- {platform: android, version: 27.0.2, date: '2026-05-14', breaking: false}
+- {platform: react_native, version: 18.0.1, date: '2026-05-14', breaking: false}
+- {platform: react_native, version: 18.0.0, date: '2026-05-11', breaking: true, note: major version bump}
+- {platform: android, version: 27.0.1, date: '2026-05-08', breaking: false}
+- {platform: android, version: 27.0.0, date: '2026-04-30', breaking: true, note: major version bump}
+- {platform: ios, version: 19.0.0, date: '2026-04-28', breaking: true, note: 'major version bump; released as CocoaPod Marigold 19.0.0 the same day'}
+- {platform: react_native, version: 17.0.0, date: '2026-04-28', breaking: true, note: major version bump}
+- {platform: ios, version: 18.4.0, date: '2026-04-09', breaking: false}
+- {platform: android, version: 26.1.0, date: '2026-04-08', breaking: false}
+- {platform: ios, version: 18.3.1, date: '2026-03-24', breaking: false}
+- {platform: ios, version: 18.3.0, date: '2026-01-12', breaking: false}
+- {platform: ios, version: 18.2.2, date: '2025-11-03', breaking: false}
+- {platform: react_native, version: 16.1.0, date: '2025-09-24', breaking: false}
+note: >-
+  breaking: true is inferred from the semver major-version increment only; the pipeline did not read
+  per-release notes bodies, so no highlight text is asserted.

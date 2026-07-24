@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://sdkdevelopers.meetmarigold.com/docs/testing-developer-push-notifications
+description: >-
+  Carnival Mobile has no HTTP sandbox with test API keys or magic test values — it is a mobile SDK, so
+  its test-vs-live separation is per-DEVICE rather than per-key. Every device registered on the platform
+  is flagged either production or development, and that flag decides whether the platform delivers via
+  the APNS production gateway or the APNS sandbox gateway. Marking the flag incorrectly causes push
+  delivery to fail outright.
+model: per-device development flag (no test/live API key prefixes)
+environments:
+- name: development
+  gateway: APNS sandbox gateway
+  applies_to: devices explicitly marked as development devices
+  requires:
+  - debug build signed with a development provisioning profile
+  - a development push certificate uploaded to the platform
+- name: production
+  gateway: APNS production gateway
+  applies_to: all devices by default
+how_to_enable_development_mode:
+- method: sdk
+  platform: ios
+  docs: https://sdkdevelopers.meetmarigold.com/docs/ios-apns-sandbox
+  calls:
+  - {language: swift, snippet: 'Marigold().setDevelopmentDeviceWithResponse { error in ... }'}
+  - {language: objective-c, snippet: '[[Marigold new] setDevelopmentDeviceWithResponse:^(NSError * _Nullable error) { ... }];'}
+  note: Documented wrapped in a `#if DEBUG` / `#ifdef DEBUG` guard so release builds are unaffected.
+- method: dashboard-ui
+  steps:
+  - Find the device under Settings, Logs, Devices
+  - Choose edit, switch "Development" to ON, click Save
+testing_flows:
+- {name: Testing Development Push Notifications, url: 'https://sdkdevelopers.meetmarigold.com/docs/testing-developer-push-notifications'}
+- {name: Testing Production Push Notifications, url: 'https://sdkdevelopers.meetmarigold.com/docs/send-a-message'}
+- {name: 'iOS: APNS Sandbox', url: 'https://sdkdevelopers.meetmarigold.com/docs/ios-apns-sandbox'}
+- {name: Troubleshooting, url: 'https://sdkdevelopers.meetmarigold.com/docs/troubleshooting'}
+caveats:
+- >-
+  Per the docs: an app signed with a development certificate generates a token that can ONLY be used via
+  the sandbox gateway, so such devices must be marked development in the device log or push will fail.
+- >-
+  Mixing development and production devices without setting the flag is the documented cause of silent
+  push delivery failure.
+test_values: []
+test_values_note: >-
+  The provider publishes no magic test identifiers, test cards, or fixture tokens for this product.
+  Nothing is invented here.

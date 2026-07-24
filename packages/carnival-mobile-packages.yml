@@ -1,0 +1,101 @@
+generated: '2026-07-20'
+method: searched
+source: https://registry.npmjs.org/ + https://trunk.cocoapods.org/api/v1/pods/
+description: >-
+  First-party client SDKs for the Carnival Mobile product line. Carnival was rebranded to Sailthru
+  Mobile and then to Marigold, so each platform has a chain of packages: the original Carnival-named
+  package, the Sailthru Mobile-named package, and the current Marigold-named package. All of them are
+  published under the same first-party publisher accounts (npm maintainer "carnival"; CocoaPods owners
+  shared across the Carnival, SailthruMobile and Marigold pods), which is the evidence for
+  official: true. Maven Central carries none of these — the Android SDK is distributed from the
+  provider's own GitHub-hosted maven repository (github.com/sailthru/maven-repository).
+lineage_note: >-
+  react-native-carnival and the Carnival CocoaPod are the historical Carnival-era packages and are no
+  longer updated; react-native-marigold and the Marigold pod are the current supported releases.
+packages:
+- language: javascript
+  registry: npm
+  name: react-native-marigold
+  url: https://www.npmjs.com/package/react-native-marigold
+  install: npm install react-native-marigold
+  version: 18.0.1
+  last_published: '2026-05-14'
+  repository: https://github.com/sailthru/sailthru-mobile-react-native-sdk
+  official: true
+  status: current
+- language: javascript
+  registry: npm
+  name: react-native-sailthru-mobile
+  url: https://www.npmjs.com/package/react-native-sailthru-mobile
+  install: npm install react-native-sailthru-mobile
+  version: 10.0.0
+  last_published: '2026-06-08'
+  repository: https://github.com/sailthru/sailthru-mobile-react-native-sdk
+  official: true
+  status: superseded
+- language: javascript
+  registry: npm
+  name: react-native-carnival
+  url: https://www.npmjs.com/package/react-native-carnival
+  install: npm install react-native-carnival
+  version: 4.1.1
+  last_published: '2022-06-26'
+  repository: https://github.com/carnivalmobile/carnival-sdk-react-native
+  official: true
+  status: legacy
+  note: The original Carnival-branded React Native wrapper.
+- language: swift-objc
+  registry: cocoapods
+  name: Marigold
+  url: https://cocoapods.org/pods/Marigold
+  install: pod 'Marigold'
+  version: 19.0.0
+  last_published: '2026-04-28'
+  repository: https://github.com/sailthru/sailthru-mobile-ios-sdk
+  official: true
+  status: current
+- language: swift-objc
+  registry: cocoapods
+  name: SailthruMobile
+  url: https://cocoapods.org/pods/SailthruMobile
+  install: pod 'SailthruMobile'
+  version: 14.1.0
+  last_published: '2023-11-10'
+  repository: https://github.com/sailthru/sailthru-mobile-ios-sdk
+  official: true
+  status: superseded
+- language: swift-objc
+  registry: cocoapods
+  name: Carnival
+  url: https://cocoapods.org/pods/Carnival
+  install: pod 'Carnival'
+  version: 9.0.0-beta
+  last_published: '2019-12-16'
+  official: true
+  status: legacy
+  note: The original Carnival-branded iOS pod, 75 published versions.
+- language: kotlin-java
+  registry: github-maven
+  name: com.marigold.sdk:marigold
+  coordinates: com.marigold.sdk:marigold
+  url: https://github.com/sailthru/sailthru-mobile-android-sdk
+  registry_url: https://github.com/sailthru/maven-repository/raw/master/
+  install: implementation 'com.marigold.sdk:marigold:20.+'
+  version: 27.0.2
+  last_published: '2026-05-14'
+  official: true
+  status: current
+  source: https://raw.githubusercontent.com/sailthru/sailthru-mobile-android-sdk/master/README.md
+  note: >-
+    Not on Maven Central — searches for com.carnival, com.sailthru.mobile and com.marigold all return
+    zero results there. Distributed from the provider's own GitHub-hosted maven repository, per the
+    SDK README.
+registries_checked:
+- {registry: npm, result: 3 first-party packages found}
+- {registry: cocoapods, result: 3 first-party pods found}
+- {registry: maven-central, result: 'zero results for com.carnival / com.sailthru.mobile / com.marigold — self-hosted maven repository used instead'}
+- {registry: pypi, result: 'no first-party package; the existing pypi "carnival" project is an unrelated Python deployment tool'}
+- {registry: rubygems, result: 'no first-party gem; the existing "carnival" gem is unrelated'}
+- {registry: nuget, result: 'no first-party package found'}
+- {registry: packagist, result: not checked}
+- {registry: crates.io, result: not checked}
