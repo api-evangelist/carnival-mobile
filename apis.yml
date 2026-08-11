@@ -66,6 +66,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Releases
+  url: https://github.com/sailthru/sailthru-mobile-ios-sdk/releases
+- type: License
+  name: MIT
+  url: https://github.com/sailthru/sailthru-mobile-ios-sdk/blob/main/LICENSE
 - type: Website
   url: https://meetmarigold.com/
 - type: Portal
