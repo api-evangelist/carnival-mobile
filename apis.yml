@@ -12,6 +12,19 @@ description: >-
   "carnival" maintainer account, which makes them the continuing distribution path for this company's
   developer surface. Carnival Mobile has no independently documented public REST API; its developer
   contract is an on-device SDK.
+deliveryModel:
+  model: open-core
+  license: MIT
+  open_source: true
+  commercial: true
+  callable_host: false
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: high
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
