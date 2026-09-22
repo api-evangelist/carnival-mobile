@@ -54,6 +54,9 @@ x-lineage:
   - {from: 'https://docs.mobile.sailthru.com/', to: 'https://sdkdevelopers.meetmarigold.com/', status: 301}
   - {source: 'https://api.github.com/orgs/carnivalmobile', note: 'org display name is "Sailthru Mobile"'}
   - {source: 'https://www.sailthru.com/product/mobile/', to: 'https://zetaglobal.com/sailthru/', status: 200, note: 'Sailthru marketing surface now resolves to Zeta Global'}
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-21
 x-enrichment:
   date: '2026-07-20'
   status: enriched
