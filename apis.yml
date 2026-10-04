@@ -1,5 +1,5 @@
 aid: carnival-mobile
-name: Carnival Mobile *
+name: Carnival Mobile
 description: >-
   Carnival Mobile (carnival.io) was a mobile relationship management platform, backed by GV, that let
   marketers segment users and deliver push notifications, in-app messages, rich media and an in-app
@@ -130,3 +130,4 @@ common:
   url: https://meetmarigold.com/company/compliance/marigolds-privacy-notices
 - type: TermsOfService
   url: https://meetmarigold.com/company/compliance/services-agreement
+x-acquired-by: sailthru
